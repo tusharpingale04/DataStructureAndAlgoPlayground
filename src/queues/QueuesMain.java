@@ -44,6 +44,18 @@ public class QueuesMain {
         queueWithStacks.enqueue(30);
         queueWithStacks.enqueue(40);
         System.out.println(queueWithStacks);
+
+        //Dynamic Priority Queue
+        PriorityQueue priorityQueue = new PriorityQueue();
+        priorityQueue.add(3);
+        priorityQueue.add(6);
+        priorityQueue.add(5);
+        priorityQueue.add(1);
+        priorityQueue.add(2);
+        System.out.println(priorityQueue);
+        while (!priorityQueue.isEmpty()){
+            System.out.println(priorityQueue.remove());
+        }
     }
 
     private static void reverse(Queue<Integer> queue){
